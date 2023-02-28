@@ -1,5 +1,5 @@
-const bruteUniqueCharactersString = require('../solution/uniqueCharactersStringSolution');
-const uniqueCharactersString = require('../solution/uniqueCharactersStringSolution')
+const bruteUniqueCharactersString = require('../code/uniqueCharactersString');
+const uniqueCharactersString = require('../code/uniqueCharactersString')
 
 test('returns true for a string with unique characters', () => {
   expect(bruteUniqueCharactersString('abcdefg')).toBe(true);

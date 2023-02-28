@@ -28,19 +28,41 @@ function bruteUniqueCharactersString(str) {
    // Use a hashmap
 
    function uniqueCharactersString(str) {
-    let charSet = new Set();
+    // Create an empty object to keep track of characters
+    const charMap = {};
+    
+    // Loop through each character in the string
     for (let i = 0; i < str.length; i++) {
-      let char = str[i];
-      if (charSet.has(char)) {
+      // Get the current character
+      const char = str[i];
+      
+      // If the character is already in the object, the string does not have unique characters
+      if (charMap[char]) {
         return false;
+      } else {
+        // Otherwise, add the character to the object
+        charMap[char] = true;
       }
-      charSet.add(char);
     }
+    
+    // If we have checked every character and not found a duplicate, the string has unique characters
     return true;
   }
+
+  /****
+   * In this algorithm, we create an empty object to keep track of each character in the string. 
+   * We then loop through each character in the string exactly once, which takes O(n) time. 
+   * For each character, we perform a constant-time lookup in the object and possibly 
+   * add a new key-value pair to the object. The time complexity of a constant-time lookup in an object is O(1). 
+   * Therefore, the overall time complexity of the algorithm is O(n) for the loop plus O(1) for each constant-time 
+   * lookup and insertion, which simplifies to O(n).
+
+    This makes the first algorithm very efficient for determining if a string has all unique characters, 
+    especially for long strings, and is generally preferred over the nested loop algorithm that has a time complexity 
+    of O(n^2).
+   * 
+   */
   
-  module.exports = bruteUniqueCharactersString;
-  module.exports = uniqueCharactersString;
   
 
 

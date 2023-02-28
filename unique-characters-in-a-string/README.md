@@ -2,6 +2,6 @@
 
 First write the code without using any other data structures (brute force)
 
-Can you make it more efficient
+Can you make it more efficient?
 
-Explain 
+Explain with pseudocode and discuus time complexity.

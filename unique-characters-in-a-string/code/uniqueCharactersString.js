@@ -3,7 +3,7 @@
 function bruteUniqueCharactersString(str) {
   // Your code here
 
-    return console.log('solution')
+
   }
 
   /*******
@@ -12,13 +12,12 @@ function bruteUniqueCharactersString(str) {
    * 
    */
 
-
    // More efficient method
 
-   function UniqueCharactersString(str) {
+  function uniqueCharactersString(str) {
     // Your code here
   
-      return console.log('solution')
+  
     }
 
     /*******
@@ -27,6 +26,9 @@ function bruteUniqueCharactersString(str) {
      * 
      */
 
+
+  module.exports = bruteUniqueCharactersString;
+  module.exports = uniqueCharactersString;
 
 
 
