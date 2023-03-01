@@ -31,6 +31,3 @@ function reverseStr(str) {
 This algorithm is more efficient than the previous one because it uses built-in methods that are optimized for performance, 
 rather than manually iterating over each character of the string.
  */
-
-module.exports = reverseString
-module.exports = reverseStr

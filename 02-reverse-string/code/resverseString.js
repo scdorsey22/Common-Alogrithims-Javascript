@@ -24,3 +24,6 @@ function reverseStr(str) {
  * 
  * 
  */
+
+ module.exports = reverseString
+ module.exports = reverseStr
