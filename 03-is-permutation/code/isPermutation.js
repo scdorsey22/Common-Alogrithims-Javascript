@@ -1,4 +1,4 @@
-//Brute force (no reverse method)
+//Brute force
 
 function isPermutationBrute(str1, str2) {
     //Write your code here
